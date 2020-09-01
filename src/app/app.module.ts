@@ -9,7 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { QuestionDetailComponent } from './question-detail/question-detail.component';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -24,7 +24,8 @@ import { QuestionDetailComponent } from './question-detail/question-detail.compo
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
