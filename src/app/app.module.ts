@@ -9,13 +9,16 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { QuestionDetailComponent } from './question-detail/question-detail.component';
-import {MatCardModule} from '@angular/material/card';
-
-
+import { MatCardModule } from '@angular/material/card';
+import { MomentModule } from 'ngx-moment';
+import { AnswerComponent } from './answer/answer.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    QuestionDetailComponent
+    QuestionDetailComponent,
+    AnswerComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,10 @@ import {MatCardModule} from '@angular/material/card';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MomentModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

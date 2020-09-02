@@ -7,7 +7,7 @@
             <h2>{{question.title}}</h2>
         </mat-card-title>
         <mat-card-subtitle>
-            <small>Oscar Saavedra - {{question.createDate}}</small>
+            <small>Oscar Saavedra - {{question.createDate | amLocale:'es' | amTimeAgo }}</small>
         </mat-card-subtitle>
     </mat-card-header>
 
@@ -16,3 +16,29 @@
     </mat-card-content>
 
 </mat-card>
+
+<div class="answer">
+    <h3>Respuestas</h3>
+    <ul class="answers-list" *ngIf="question.answer.length >0">
+        <li>
+            <h5>Oscar Saavedra <small>Hace unos segundos</small> </h5>
+            <p class="description">
+                Yo tengo la respuesta
+            </p>
+        </li>
+        <li>
+            <h5>Andrea Ramirez <small>Hace unos segundos</small> </h5>
+            <p class="description">
+                Dios es la respuesta
+            </p>
+        </li>
+        <li>
+            <h5>Diego Perez <small>Hace unos segundos</small> </h5>
+            <p class="description">
+                No sé amigo
+            </p>
+        </li>
+    </ul>
+    <p *ngIf="question.answer.length === 0">Sé el primero en responder esta pregunta</p>
+    <app-answer></app-answer>
+</div>
