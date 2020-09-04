@@ -13,7 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MomentModule } from 'ngx-moment';
 import { AnswerComponent } from './answer/answer.component';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninScreenComponent } from './auth/signin-screen.component';
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { SigninScreenComponent } from './auth/signin-screen.component';
     MatCardModule,
     MomentModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
