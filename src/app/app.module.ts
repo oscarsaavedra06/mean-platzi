@@ -14,11 +14,13 @@ import { MomentModule } from 'ngx-moment';
 import { AnswerComponent } from './answer/answer.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { SigninScreenComponent } from './auth/signin-screen.component';
 @NgModule({
   declarations: [
     AppComponent,
     QuestionDetailComponent,
-    AnswerComponent
+    AnswerComponent,
+    SigninScreenComponent
   ],
   imports: [
     BrowserModule,

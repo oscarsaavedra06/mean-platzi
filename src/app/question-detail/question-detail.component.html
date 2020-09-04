@@ -20,25 +20,14 @@
 <div class="answer">
     <h3>Respuestas</h3>
     <ul class="answers-list" *ngIf="question.answer.length >0">
-        <li>
-            <h5>Oscar Saavedra <small>Hace unos segundos</small> </h5>
+        <li *ngFor="let answer of question.answer">
+            <h5>{{answer.user.fullName()}}}<small>{{answer.createdAt |amLocale:'es' |amTimeAgo}}</small> </h5>
             <p class="description">
-                Yo tengo la respuesta
+                {{answer.description}}
             </p>
         </li>
-        <li>
-            <h5>Andrea Ramirez <small>Hace unos segundos</small> </h5>
-            <p class="description">
-                Dios es la respuesta
-            </p>
-        </li>
-        <li>
-            <h5>Diego Perez <small>Hace unos segundos</small> </h5>
-            <p class="description">
-                No sé amigo
-            </p>
-        </li>
+       
     </ul>
     <p *ngIf="question.answer.length === 0">Sé el primero en responder esta pregunta</p>
-    <app-answer></app-answer>
+    <app-answer [question]="question" class="answer-form"></app-answer>
 </div>
