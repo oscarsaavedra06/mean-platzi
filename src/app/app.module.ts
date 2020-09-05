@@ -15,12 +15,16 @@ import { AnswerComponent } from './answer/answer.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninScreenComponent } from './auth/signin-screen.component';
+import { SignupScreenComponent } from './auth/signup-screen.component';
+import { QuestionListComponent } from './question-detail/question-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     QuestionDetailComponent,
     AnswerComponent,
-    SigninScreenComponent
+    SigninScreenComponent,
+    SignupScreenComponent,
+    QuestionListComponent
   ],
   imports: [
     BrowserModule,
