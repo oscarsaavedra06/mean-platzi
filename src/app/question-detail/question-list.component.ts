@@ -1,4 +1,12 @@
 import { Component } from "@angular/core";
+import { Question } from './question.model';
+
+const q = new Question(
+    'Cómo reutilizo un componente en android',
+    'Descripcion de pregunta',
+    new Date(),
+    'none'
+);
 
 @Component({
     selector: 'app-question-list',
@@ -8,6 +16,7 @@ import { Component } from "@angular/core";
 
 
 export class QuestionListComponent {
+    questions: Question[] = new Array(10).fill(q);
 
 
 
