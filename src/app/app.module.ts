@@ -17,6 +17,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninScreenComponent } from './auth/signin-screen.component';
 import { SignupScreenComponent } from './auth/signup-screen.component';
 import { QuestionListComponent } from './question-detail/question-list.component';
+import { QuestionFormComponent } from './question-detail/question-form.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatRadioModule} from '@angular/material/radio';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,8 @@ import { QuestionListComponent } from './question-detail/question-list.component
     AnswerComponent,
     SigninScreenComponent,
     SignupScreenComponent,
-    QuestionListComponent
+    QuestionListComponent,
+    QuestionFormComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,9 @@ import { QuestionListComponent } from './question-detail/question-list.component
     MomentModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
