@@ -20,7 +20,7 @@ import { QuestionListComponent } from './question-detail/question-list.component
 import { QuestionFormComponent } from './question-detail/question-form.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatRadioModule} from '@angular/material/radio';
-
+import { Routing } from "./app.routing";
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +45,8 @@ import {MatRadioModule} from '@angular/material/radio';
     FormsModule,
     ReactiveFormsModule,
     MatGridListModule,
-    MatRadioModule
+    MatRadioModule,
+    Routing
   ],
   providers: [],
   bootstrap: [AppComponent]
